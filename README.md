@@ -21,9 +21,11 @@ const rssParser = require('rss-parser');
  There will be object with two member functions:
  
 ***parse(options) > Promise***
+
 Takes *options* as argument and returns Promise object.
 
 ***parseCallback(options, callback) > undefined***
+
 Takes *options* and *callback* as arguments and returns nothing.
 
 In each case *options* is object which has same keys as in *config.js* file. Values will replace ones from *config.js* each call. If you want to keep defaults, just call functions with empty *options* object, like this:
