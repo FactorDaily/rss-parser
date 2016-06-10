@@ -14,7 +14,7 @@ npm i --save perimetral/rss-parser
 ```    
 ----------
 #### Usage
-First of all there are configuration file *config.js*. You are free to reconfigure every option in it as you want. It is static options which will be imported once when module will be imported. You can import module to your application by:
+First of all there are configuration file *config.js*. You are free to reconfigure every option in it as you want. It are static options which will be applied once when importing module. You can import module to your application by:
 ```
 const rssParser = require('rss-parser');
 ```
