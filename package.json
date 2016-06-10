@@ -1,0 +1,23 @@
+{
+  "name": "rss-parser",
+  "version": "1.0.0",
+  "description": "basic rss parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perimetral/rss-parser.git"
+  },
+  "keywords": [
+    "rss",
+    "parser"
+  ],
+  "author": "perimetral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perimetral/rss-parser/issues"
+  },
+  "homepage": "https://github.com/perimetral/rss-parser#readme"
+}
