@@ -62,10 +62,10 @@ const parse = (options = {}) => {
 		if (! config.input.length) return stop(new Error('No input specified!'));
 		if (Buffer.isBuffer(config.input)) config.input = config.input.toString('utf8');
 
-		mongo.connect(config.mongo.url, (me, db) => {
+		mongo.connect(config.mongoUrl, (me, db) => {
 			if (me) return stop(new Error(me));
 
-			let output = db.collection(config.mongo.collection)
+			let output = db.collection(config.mongoCollection)
 			xml2js.parseString(config.input, (e, result) => {
 				let index = 0;
 				for (let i in result) {
@@ -80,8 +80,8 @@ const parse = (options = {}) => {
 								index += 1;
 							};
 							output.insertOne(chunk, (ie, insertResult) => {
-								if (e) config.logger.error(new Error(e));
-								config.logger.success(insertResult);
+								if (e) config.loggerError(new Error(e));
+								config.loggerSuccess(insertResult);
 							});
 						};
 					};
@@ -99,8 +99,8 @@ const parse = (options = {}) => {
 										index += 1;
 									};
 									output.insertOne(chunk, (ie, insertResult) => {
-										if (e) config.logger.error(new Error(e));
-										config.logger.success(insertResult);
+										if (e) config.loggerError(new Error(e));
+										config.loggerSuccess(insertResult);
 									});
 								};
 							};
