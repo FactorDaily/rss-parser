@@ -49,7 +49,7 @@ Default is: **mongodb://localhost:27027/rss-parser**
 
 *mongoCollection*
 
-String. Required. Represent collection name in which MongoDB will store data.
+String. Required. Represents collection name in which MongoDB will store data.
 Default is: **contents**
 
 
