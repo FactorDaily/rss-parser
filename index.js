@@ -2,15 +2,15 @@ const xml2js = require('xml2js');
 const mongo = require('mongodb').MongoClient;
 let config = require('./config');
 
-const parseCallback = (options, callback) => {
+const parseCallback = (options = {}, callback) => {
 	config = Object.assign(config, options);
 	if (! config.input.length) return callback(new Error('No input specified!'));
 	if (Buffer.isBuffer(config.input)) config.input = config.input.toString('utf8');
 
-	mongo.connect(config.mongo.url, (me, db) => {
+	mongo.connect(config.mongoUrl, (me, db) => {
 		if (me) return callback(new Error(me));
 
-		let output = db.collection(config.mongo.collection)
+		let output = db.collection(config.mongoCollection)
 		xml2js.parseString(config.input, (e, result) => {
 			let index = 0;
 			for (let i in result) {
@@ -25,8 +25,8 @@ const parseCallback = (options, callback) => {
 							index += 1;
 						};
 						output.insertOne(chunk, (ie, insertResult) => {
-							if (e) config.logger.error(new Error(e));
-							config.logger.success(insertResult);
+							if (e) config.loggerError(new Error(e));
+							config.loggerSuccess(insertResult);
 						});
 					};
 				};
@@ -44,8 +44,8 @@ const parseCallback = (options, callback) => {
 									index += 1;
 								};
 								output.insertOne(chunk, (ie, insertResult) => {
-									if (e) config.logger.error(new Error(e));
-									config.logger.success(insertResult);
+									if (e) config.loggerError(new Error(e));
+									config.loggerSuccess(insertResult);
 								});
 							};
 						};
@@ -56,7 +56,7 @@ const parseCallback = (options, callback) => {
 	});
 };
 
-const parse = (options) => {
+const parse = (options = {}) => {
 	return new Promise((go, stop) => {
 		config = Object.assign(config, options);
 		if (! config.input.length) return stop(new Error('No input specified!'));
