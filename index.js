@@ -31,7 +31,7 @@ const parseCallback = (options = {}, callback) => {
 					};
 				};
 
-				if ('description' in result[i]) {
+				if ('content:encoded' in result[i]) {
 					xml2js.parseString(result[i].description, (e2, description) => {
 						for (let tag in description) {
 							if (config.filters.includes(tag)) {
