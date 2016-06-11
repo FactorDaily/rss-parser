@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>FactorDaily</title>
+	<atom:link href="http://factordaily.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://factordaily.com</link>
+	<description>Stories on technology for the urban Indian</description>
+	<lastBuildDate>Wed, 08 Jun 2016 08:54:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.5.2</generator>
+
+<image>
+	<url>http://factordaily.com/wp-content/uploads/2016/03/cropped-Favicon_Web1-32x32.jpg</url>
+	<title>FactorDaily</title>
+	<link>http://factordaily.com</link>
+	<width>32</width>
+	<height>32</height>
+</image>
+	<item>
+		<title>The Wonk Factor: How technology is disrupting inflation</title>
+		<link>http://factordaily.com/wonk-factor-technology-disrupting-inflation/</link>
+		<pubDate>Wed, 08 Jun 2016 08:51:55 +0000</pubDate>
+		<dc:creator><![CDATA[Shrabonti Bagchi]]></dc:creator>
+				<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Video]]></category>
+		<category><![CDATA[ecommerce]]></category>
+		<category><![CDATA[economy]]></category>
+		<category><![CDATA[inflation]]></category>
+		<category><![CDATA[policy]]></category>
+		<category><![CDATA[wonk]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1101</guid>
+		<description><![CDATA[<p>In the second episode of The Wonk Factor, a series of conversations on technology, policy and disruption between FactorDaily and the Takshashila Institution, Pavan Srinath, Head of Strategy and Programmes at Takshashila, spoke to us about how technology has impacted inflation in India. Pavan shares insights about the way sectors that have been massively disrupted [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/wonk-factor-technology-disrupting-inflation/">The Wonk Factor: How technology is disrupting inflation</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>In the second episode of The Wonk Factor, a series of conversations on technology, policy and disruption between FactorDaily and the Takshashila Institution, <a href="http://takshashila.org.in/team/pavan-srinath/">Pavan Srinath</a>, Head of Strategy and Programmes at Takshashila, spoke to us about how technology has impacted inflation in India.</p>
+<p>Pavan shares insights about the way sectors that have been massively disrupted by technology have behaved (think commuting or ordering food online), and how this contrasts with sectors that are yet to see significant technological impact — where the ways of doing business are more or less the same as they used to be a couple of decades ago.</p>
+<p>Let&#8217;s look at how the internet economy has influenced the way we spend.</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/wonk-factor-technology-disrupting-inflation/">The Wonk Factor: How technology is disrupting inflation</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The leaky bucket of Indian food delivery startups</title>
+		<link>http://factordaily.com/the-economics-of-food-delivery/</link>
+		<pubDate>Wed, 08 Jun 2016 03:18:16 +0000</pubDate>
+		<dc:creator><![CDATA[Santanu Bhattacharya]]></dc:creator>
+				<category><![CDATA[Companies]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[food delivery]]></category>
+		<category><![CDATA[FreshMenu]]></category>
+		<category><![CDATA[startups]]></category>
+		<category><![CDATA[Swiggy]]></category>
+		<category><![CDATA[TinyOwl]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1088</guid>
+		<description><![CDATA[<p>[This post describes the mathematical analysis of the dynamics and unit economics of standalone food delivery companies in India. For example, in order to arrive at monthly “burn rate” calculations (i.e. how much money standalone food delivery companies are losing), we have used India-specific numbers for delivery charges and labour costs, among others. However, the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/the-economics-of-food-delivery/">The leaky bucket of Indian food delivery startups</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><i>[This post describes the mathematical analysis of the dynamics and unit economics of </i><b><i>standalone food delivery companies</i></b><i> in </i><b><i>India</i></b><i>. For example, in order to arrive at monthly “burn rate” calculations (i.e. how much money standalone food delivery companies are losing), we have used India-specific numbers for delivery charges and labour costs, among others. However, the mathematical models on order arrival rates, wait time and how they affect service levels apply globally].</i></p>
+<p>“Eating out” is out, “ordering in” is in. In this new convenience economy, the restaurant industry is learning to cope with this change with a host of startups providing new ways of delivering food to customers on demand. Investment has predictably followed: startup analytics firm<a href="http://blog.tracxn.com/"> Tracxn </a> showed that in 2015, 31 food-tech startups in India raised over $160 million, compared to ~$67 million in 2014. In the first fortnight of 2016, one firm alone raised $35 million in funding. Money is definitely pouring into the sector despite a few recent shutdowns and whispers about unprofitability and a slowdown in investments.</p>
+<p>First, let us look at how food delivery businesses work. They are usually constrained by a number of real-world factors:</p>
+<ul>
+<li><b>Limited delivery time</b> as people want their food typically within 30–45 minutes, leaving 20–30 minutes for delivery (assuming a 10–15 minute prep time)</li>
+<li><b>Unpredictable demand patterns</b>, e.g., a person may order from different restaurants in the same week</li>
+<li><b>Highly concentrated peaks</b> in ordering around meal-times, e.g., noon — 3 PM for lunch, and 8–11 PM for dinner, making capacity estimation and management of the delivery fleet difficult</li>
+<li><b>Inability to influence external circumstances </b>such as traffic, weather and changing demands on a daily basis</li>
+<li><b>Kitchen operations</b></li>
+</ul>
+<p>These factors make it challenging for standalone food delivery (FD) startups to be profitable. These startups need tremendous efficiency in order to overcome real world challenges, meet customer expectations <b><i>and</i></b> turn profitable, all the while competing with the in-house delivery expenditure of restaurants, which is not very large (and is a discretionary expenditure).</p>
+<p>In order to cater to the burgeoning demand for such delivery requests, many delivery startups have resorted to employing a large number of bikers (also called “Field Executives” or FEs in India), i.e., over-investing in number of people to solve a problem. The assumption is that while currently unprofitable, the food delivery business would be similar to other delivery businesses (e.g., e-commerce delivery), and will eventually be profitable over time through greater aggregation of orders and operational scale. In this note, we investigate these assumptions mathematically.</p>
+<h3>A typical day in the life of a food delivery business</h3>
+<p>Consider the following scenario.</p>
+<p>A popular food delivery startup in South Delhi has been getting many orders, thanks to its recent coverage in national newspapers and TV. It now gets over 2000 weekly food delivery orders, i.e., about 40 orders per hour. As soon as an order is placed on the system, it assigns the closest available FE to reach the restaurant, pick up the order and deliver it to the customer. It is assumed that the system has been optimised, so that as soon as the FE reaches the restaurant, the order is ready to be collected. As soon as the order is delivered, the FE becomes available again to be assigned to another order. The CEO of the startup has estimated the following:</p>
+<ul>
+<li>From the time an order is assigned to an FE, the average time taken for the FE to complete the order is 30 minutes, i.e. an FE can drive to the assigned restaurant, pick up the food, and deliver it to the customer in 30 minutes. Therefore, common sense would suggest an FE could deliver two orders per hour at 100% utilisation.</li>
+</ul>
+<ul>
+<li>To cater to the clientele, the company has hired 25 FEs. At 100% utilisation, they should be able to deliver 50 orders per hour, well above the demand of 40 orders/hour.</li>
+</ul>
+<p>However, things are not as easy as the company had initially imagined. In the past week, they were forced to delay delivery, hire additional people in the last minute at a very high cost and took occasional calls from angry customers.</p>
+<p>What happened here?</p>
+<h3>Parameters of Profitability</h3>
+<p>To analyse the situation discussed above, let us mathematically model the entire process. The following factors are important for any food delivery business, as they form the parameters for the mathematical model under which the business might operate:</p>
+<ul>
+<li><b>Order arrival rate</b>, i.e., number of customer orders per hour,</li>
+<li><b>Delivery service time</b>, i.e., average time taken to deliver an order</li>
+<li><b>Number of FEs</b> available at any given time.</li>
+</ul>
+<p>We have analysed historic data related to arrival rates and service times for food delivery businesses and have made the following observations:</p>
+<p><b>Order Arrival Rate: </b>The orders do not arrive at a uniform rate. In reality, customer arrival rate at a restaurant may look like this:</p>
+<p><img class="aligncenter wp-image-1078 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-1-1024x512.jpg" alt="LeakyBucket-Fig-1" width="1000" height="500" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-1-1024x512.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-1-300x150.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-1-160x80.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-1.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /></p>
+<p>To model the incoming orders we assume a Markov process. <strong>According to the Markov process,</strong> <strong>the number of potential new customers is independent of the number of customers already waiting in the queue.</strong> A well-known Markov process that is often used to model the arrival rate of orders in a business such as the food delivery business is the Poisson process. According to this process, the number of new customers who arrive every hour is given by a Poisson distribution (<a href="http://factordaily.com/appendix-1-poisson-distribution/">see Appendix 1 for details</a>). The main input parameter required to define a Poisson distribution is the average arrival rate per hour (λ), which is equal to 40 orders/hour for the example discussed above.</p>
+<ol start="2">
+<li><b> Delivery Service Rate: </b>defined as the average number of customers served in an hour. This is dependent on the time is takes to serve a single order, which is a random variable, owing to unpredictable factors such as traffic conditions, wait times at the restaurant/customer, etc. As we write, we are collecting initial data from FD services and it appears that the service times follow a Gamma distribution with a mean of around 30 minutes (i.e., 2 order delivered per hour on average) and a standard deviation of 16.2 minutes (see Figure 2). These service times include the time it takes an FE to drive to the assigned restaurant, pick up the food, and deliver it to the customer.</li>
+</ol>
+<div id="attachment_1079" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1079 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-2-1024x512.jpg" alt="LeakyBucket-Fig-2" width="1000" height="500" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-2-1024x512.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-2-300x150.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-2-160x80.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-2.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Service times follow a Gamma distribution with a mean of ~30 minutes and a standard deviation of 16.2 minutes</p></div>
+<p>Based on the above observations, it is easy to understand why queues and waiting times build up for the food delivery business. If it was assumed that the arrival rates and service times are uniform, i.e., an order arrives every 1.5 minutes and it takes exactly 30 minutes to serve an order, then if we have more than 30/1.5 ~ 20 FEs, all orders will be processed immediately, without any queues being formed. However, due to the variability of arrival/service rates, a wait-free delivery service is not feasible.</p>
+<h3>Queuing System:</h3>
+<p>Now, to analyse the behaviour of the queues being formed, we develop a queuing model based on the observed data, to help us estimate the average time a customer will need to wait before their order is delivered. Note that the wait time for a customer is defined as the sum of (i) the time the order is in queue, i.e., the time it takes for an order to be assigned to an FE (this happens when all FEs are busy with existing order deliveries), and (ii) the service time for the order (which follows a Gamma distribution).</p>
+<p>Mathematically, the problem of assigning servers to customers falls under a class of problems known as “Queuing Problem” — literally, how the customers come and join a queue at irregular intervals and how do they get served. The queuing theory is not a hypothetical situation: lines in supermarkets or bus stations, or the waiting time for a person to respond when you call an airline, all follow queuing theory.</p>
+<p>A queuing model for our scenario will have the following structure:</p>
+<div id="attachment_1080" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1080 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-3-1024x384.jpg" alt="LeakyBucket-Fig-3" width="1000" height="375" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-3-1024x384.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-3-300x113.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-3-160x60.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-3.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Typical food delivery process</p></div>
+<ol>
+<li><b>Incoming Orders: </b>Orders arrive randomly and the number of orders per hour follow a Poisson distribution with a mean λ <b>. </b>The queuing system will be studied for different for different values of λ.</li>
+<li><b>Queue: </b>The queue follows a First in First Out (FIFO) priority rule and is assumed to have an unlimited capacity, i.e., the food delivery business will not decline an order.</li>
+<li><b>Service: </b>The service of the queuing system is dependent on the Number of FEs, the Service Rates, and the Order Aggregation Rate:</li>
+</ol>
+<ul>
+<li>The Number of FEs: We assume they all are equally good and take the same amount of time for an order completion.</li>
+<li>Service Rates: We know that service times are variable and follow a Gamma distribution with a mean of 30 minutes and standard deviation of 16.2 minutes. Thus, the mean service rate can be computed as µ = 2./li&gt;</li>
+<li>Order Aggregation Rate: Defined as the fraction of all orders that are aggregated into shipments of two, e.g., when two orders are aggregated, the FE is able to deliver both of them in a single trip. If the order aggregation rate is high, it will improve the service rates as well. It can be easily derived that if a fraction x of all orders are aggregated into pairs, then the service rate µ will be multiplied by a factor of  1/(1-x/2)</li>
+<li>Current data suggests that less than 5% of orders are aggregated, implying that the updated service rate can be found as µ = 2.05.</li>
+</ul>
+<h3>Mathematical Description of the Proposed Queuing Model:</h3>
+<p>The above queuing model may be represented as an M/G/m model, in standard queuing nomenclature. “M” in the first field denotes that a Markov process is in place for the arrival rates; “G” in the second field denotes that a General distribution (Gamma in our case) is being used to model the service times; “m” in the third field denotes that multiple servers (FEs in our case) are being used in the queuing model.</p>
+<p>This model is a somewhat exotic queuing model with very few analytical results available in the queuing literature. According to the research paper by Lee and Longton (1959), the mean waiting time for the M/G/m model can be approximated by using a factor to adjust the mean waiting time in an M/M/m queue. The latter model assumes that the service times follow an Exponential distribution and is among the most well studied queuing models in the literature. The formulae presented below represent the key metrics of the M/M/m queuing system and can be easily derived:</p>
+<p><img class="aligncenter wp-image-1089 size-full" src="http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.33.23-AM.png" alt="Screen Shot 2016-06-08 at 8.33.23 AM" width="681" height="485" srcset="http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.33.23-AM.png 681w, http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.33.23-AM-300x214.png 300w, http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.33.23-AM-160x114.png 160w" sizes="(max-width: 681px) 100vw, 681px" /></p>
+<p>&nbsp;</p>
+<p>Finally, the mean time waiting time for the M/G/m model can be computed as:</p>
+<p><img class="aligncenter wp-image-1090 size-full" src="http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.35.14-AM.png" alt="Screen Shot 2016-06-08 at 8.35.14 AM" width="486" height="61" srcset="http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.35.14-AM.png 486w, http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.35.14-AM-300x38.png 300w, http://factordaily.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-08-at-8.35.14-AM-160x20.png 160w" sizes="(max-width: 486px) 100vw, 486px" /></p>
+<p>&nbsp;</p>
+<p>where C is the coefficient of variation (ratio of standard deviation and mean, equal to 0.54 for our data) and W is the mean waiting time as found by formula (5).</p>
+<h3><strong>Findings: Standalone food delivery business is highly unstable, with high odds of unprofitability</strong></h3>
+<p>1.Wait times do not increase linearly</p>
+<p>Using formula (6) for the average time spent in the system, we can compute the average time it takes for an order to be completed (service time + queue time) for varying arrival rates and the average utilization of the system (use formula (1)). It appears that the waiting time of the customers increase non-linearly with the arrival rates. Table 1 presents the results for a fixed number of FEs and several arrival rates.</p>
+<div id="attachment_1083" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1083 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-1-1024x384.jpg" alt="LeakyBucket-Table-1" width="1000" height="375" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-1-1024x384.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-1-300x113.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-1-160x60.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-1.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Order Arrival Rate, Utilization and Customer Wait Time varies non-linearly</p></div>
+<p>This is <b><i>counterintuitive</i></b>: one would think that if a parameter changes by about 25% (in this case, arrival rate going up from 40 to 50), other associated parameters, such as waiting time would change in a similar manner, i.e., likely about 25% or so. Instead, the <i>irregularity in the arrival rate makes the system highly unstable and increases wait time disproportionately,</i> <i>in this case, by 134%.</i></p>
+<div id="attachment_1081" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1081 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-4-1024x427.jpg" alt="LeakyBucket-Fig-4" width="1000" height="417" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-4-1024x427.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-4-300x125.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-4-160x67.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Fig-4.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">In this scenario, by increasing the number of customers from 40–50, i.e., just a change of 25%, mean waiting time goes from 23 minutes to 54 minutes</p></div>
+<p>2.The Impact on P&amp;L:</p>
+<p>Table 2 shows FE salary bands for two types of scenario we encounter. In most cities the “Cost to Company (CTC)” for the FEs are Rs. 15,000 per month. In some parts of more expensive metros such as Bangalore and Delhi, the salaries are now inching up towards Rs. 18,000 per month. Note that a food delivery company has significant other expenses such as the fuel, bike rental, corporate overhead etc.</p>
+<div id="attachment_1084" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1084 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-2-1024x213.jpg" alt="LeakyBucket-Table-2" width="1000" height="208" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-2-1024x213.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-2-300x63.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-2-160x33.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-2.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Cost per FE for different salary bands</p></div>
+<p>It can be easily understood that if we have more FEs on the ground, the average waiting time per order will be reduced. We currently promise a turn around time (TAT) of around 45 minutes. To meet this target on a consistent basis, the mean TAT should be around 30–35 minutes, as the standard deviation on the service times is around 16 minutes.</p>
+<p>Let us see how many FEs are required to maintain a mean waiting time of about 30–35 minutes, for different arrival rates (see Table 3). For each arrival rate, we also show what happens when we have only one less FE than the recommended level. It turns out that the mean waiting time increases to about 55–60 minutes. If we take away another FE from the system, the delivery system becomes unfeasible, i.e., arrival rate becomes more than net service rate. These calculations are made using formula (6). Table 3 also provides the minimum amount that should be charged per order to attain profitability in each case.</p>
+<div style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1085 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-3-1024x469.jpg" alt="LeakyBucket-Table-3" width="1000" height="458" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-3-1024x469.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-3-300x138.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-3-160x73.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-3.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Minimum number of FEs required for a given Arrival Rate and the corresponding revenue requirements per order (in Rs.); Λ represents the mean arrival rate per hour</p></div>
+<p>Note that if the mean wait time is around 30 minutes (55 minutes), the minimum revenue requirement per order, hovers around Rs. 66 (Rs. 63)/order with Band A employees and around Rs. 79 (Rs. 76)/per order for Band B employees. In reality, the market does not allow us to charge more than Rs. 50 per order, thereby incurring losses on every order, even if we allow a mean wait time of 55–60 minutes, which may not be an acceptable turnaround time for food delivery orders.</p>
+<p>Let us now scale up our calculations and calculate the “burn rate” assuming we aim for a mean wait time of around 30–35 minutes and the revenue per order is Rs. 50. Table 4 displays the “burn rate” under two scenarios:</p>
+<div id="attachment_1086" style="width: 1010px" class="wp-caption aligncenter"><img class="wp-image-1086 size-large" src="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-4-1024x341.jpg" alt="LeakyBucket-Table-4" width="1000" height="333" srcset="http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-4-1024x341.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-4-300x100.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-4-160x53.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/LeakyBucket-Table-4.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /><p class="wp-caption-text">Burn rate for a standalone food delivery company</p></div>
+<h3>Key Assumptions:</h3>
+<p>Notice that a number of key assumptions have been made in order to make the calculations presented in this article. All of these assumptions <b><i>favour</i></b>the FD business, <strong>so the results of the calculations should be seen as an optimistic estimate of the real situation</strong>. The main assumptions are:</p>
+<ul>
+<li>The mean arrival rate remains constant throughout the day — this is highly unlikely since in reality the order rate peaks only at meal times. Notice that the mean arrival rate of λ = 40 mentioned in the example discussed above, was for meal times only.</li>
+</ul>
+<ul>
+<li>The system has been optimized, so that as soon as the FE reaches the restaurant, the order is ready to be collected. In reality, this is extremely hard to achieve and it is often observed that the FE loses a lot of time (8 minutes on average) at the restaurant, while waiting for the food to be ready. For the purpose of our calculations, we have assumed this waiting time to be a nominal 2 minutes, since it is believed that with better scheduling of resources this wait time can be avoided.</li>
+</ul>
+<ul>
+<li>If two or more orders are aggregated, then an FE takes the same amount of time to deliver the aggregated order that it takes to deliver a single order.</li>
+</ul>
+<h3>Conclusion:</h3>
+<p>From our analysis, it is clear that the food delivery business is highly unstable, largely because the arrival/service rates of orders are not uniform. This results in large fluctuations in the delivery time, as well as utilization of the FEs, with high odds for unprofitability.</p>
+<p>At the current scale, the order density is not very dense, which makes it difficult to aggregate orders and results in most orders being “Single pick, Single drop”. Our own internal data suggests that only about 4–5% orders are aggregated, which has little impact on the profitability of the FD model. However, if this figure increases to about 55%, calculations suggest that profitability may be achieved, provided all other assumptions still hold.</p>
+<p>There are other potential ways to be profitable, for example, through <b>cross-utilization of resources</b> or with a different business model. A company that has multiple business lines such as food as well as package delivery, could cross-utilize the resources to build a profitable business model. For example, a package delivery company can use the FE’s for package delivery 9–12, some for Food Delivery 12–3, Package delivery 3–6 and some for food delivery at night.</p>
+<p>A second alternative is a <b>“food club” model</b> with a limited menu and slotted delivery time. This takes out the uncertainties on the arrival rate out of the equation, resulting in high FE utilization.</p>
+<p>A third alternative is an <b>“in-house delivery person” model</b> where an FE is also utilized for restaurant duties (such as food serving) to lower the overall cost of delivery and improve utilization. In reality, most Indian restaurants work on this model internally, so it might be worth understanding the economics of the same.</p>
+<p>A fourth possible model is where the <b>density of the users is high</b> (such as Koramangala in Bangalore Metro Area), and food from a <b> pre-selected menu</b> is delivered within a very short period of time, something akin to what UberEATS is experimenting with.</p>
+<p>The economics of the standalone food delivery lies in the science of incentives. If the current delivery rates charged by the existing FD cos are well below the cost borne internally, the entrepreneur will eventually shut down. On the other hand, if the price rises enough, the restaurant will likely switch to an in-house model.</p>
+<p><i>The team that has worked on this article  comprises </i><a href="https://www.linkedin.com/in/santanub"> <i>Dr. Santanu Bhattacharya</i></a><i>, Dr.</i><a href="https://in.linkedin.com/in/krustogi"> <i>Kabir Rustogi</i></a><i>,</i><a href="https://www.linkedin.com/in/suvayu-ali-b96309a8"> <i>Suvayu Ali</i></a> <i>(PhD candidate) and</i><a href="https://in.linkedin.com/in/snigdha-gupta-88a31a45"> <i> Snigdha Gupta</i></a><i>, with active support from our CEO Sahil Barua and CTO</i><a href="https://in.linkedin.com/in/kbhara"> <i>Kapil Bharati</i></a><i>. For full disclosure,</i><a href="http://www.delhivery.com"> <i> Delhivery</i></a> <i>is India’s leading third party logistics provider. We work with many FD companies to help them gain efficiency.</i></p>
+<p><i>The authors would like to thank numerous friends who have reviewed the paper and provided valuable feedback, including</i><a href="https://www.linkedin.com/in/nick-berry-337138"> <i>Nick Berry,</i></a><i> Data Scientist at Facebook,</i><a href="https://in.linkedin.com/in/abhi-dhall-a4a268ab"> <i>Abhi Dhall</i></a> <i>of Multiples Equity,</i><a href="https://in.linkedin.com/in/akhileshtilotia"> <i>Akhilesh Tilotia</i></a> <i>of Kotak Security and</i><a href="http://www.foundingfuel.com/contributor/haresh-chawla/"> <i>Haresh Chawla</i></a> <i>of India Value Fund.</i></p>
+<p>Lead image: Nikhil Raj P</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/the-economics-of-food-delivery/">The leaky bucket of Indian food delivery startups</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>My quest to find drones in Bengaluru&#8217;s grey market</title>
+		<link>http://factordaily.com/buy-drone-in-bangalore-grey-market/</link>
+		<pubDate>Tue, 07 Jun 2016 05:30:07 +0000</pubDate>
+		<dc:creator><![CDATA[Ramarko Sengupta]]></dc:creator>
+				<category><![CDATA[Lifestyle]]></category>
+		<category><![CDATA[camera drone]]></category>
+		<category><![CDATA[DGCA]]></category>
+		<category><![CDATA[drone]]></category>
+		<category><![CDATA[drone ban]]></category>
+		<category><![CDATA[drone import]]></category>
+		<category><![CDATA[drone prices]]></category>
+		<category><![CDATA[Featured]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1050</guid>
+		<description><![CDATA[<p>Smaller ones, bigger ones, with camera or without—I was suddenly spoilt for choice. It was like going from a famine to feast.</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/buy-drone-in-bangalore-grey-market/">My quest to find drones in Bengaluru&#8217;s grey market</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>With the government putting a number of restrictions on <a href="http://factordaily.com/buying-a-drone-in-india/">buying a drone in India</a>, getting one is quite a task. My colleague Jayadevan found out first hand when he ordered one from China, and it got stuck at Mumbai customs.</p>
+<p>To cut a long story short, custom officials at the Mumbai airport seized it, and said he’ll need permission from the aviation regulator DGCA (Directorate General of Civil Aviation) and the Wireless Planning and Co-ordination wing of the Ministry of Communications.</p>
+<p>But if you really want to own a drone, there&#8217;s another way. The good old grey markets of Bengaluru. So one sultry and hot afternoon, I set out to find one. These markets are near the Kempegowda bus station a.k.a Majestic. It is one of Bengaluru&#8217;s busiest areas, dusty and crowded but full of surprises.</p>
+<p>Home to the the likes of National Market, Bajaj Complex, Bangkok Plaza among others, you&#8217;ll find almost every electronic device here.</p>
+<p>On my day out, National Market was shut. Apparently, someone important associated with the mall was getting married or was it his wedding anniversary—well, it doesn’t matter—bottomline is it was shut. I was disappointed and was wondering if my trip was wasted. After all National Market is the most prominent of the markets there.</p>
+<p><img class="aligncenter size-large wp-image-1062" src="http://factordaily.com/wp-content/uploads/2016/06/Bangkok-Plaza-1024x683.jpg" alt="Bangkok Plaza" width="1000" height="667" srcset="http://factordaily.com/wp-content/uploads/2016/06/Bangkok-Plaza-1024x683.jpg 1024w, http://factordaily.com/wp-content/uploads/2016/06/Bangkok-Plaza-300x200.jpg 300w, http://factordaily.com/wp-content/uploads/2016/06/Bangkok-Plaza-160x107.jpg 160w, http://factordaily.com/wp-content/uploads/2016/06/Bangkok-Plaza.jpg 1200w" sizes="(max-width: 1000px) 100vw, 1000px" /></p>
+<p>I walked across next door, to what is called Bajaj Complex. Lo and behold! Drones! Displayed brazenly on store shelves. Smaller ones, bigger ones, with camera or without—I was suddenly spoilt for choice. It was like going from famine to feast.</p>
+<p>I started haggling over the prices of the different drones on display. And it looked like I could get the smaller ones for around Rs 1,500, the medium-sized ones for about Rs 2,500, and if I fancied one with a camera, which is what Jayadevan had ordered, it would set me back by Rs 4,000.</p>
+<p>The shopkeeper, Rashid warned me that the camera quality won’t be great. “It’s just VGA,” he said. “If you want good quality output get one without a camera, and mount your own GoPro or whatever,” he suggested. Another shopkeeper, Devi Singh, at the neighbouring Hong Kong Bazaar, told me that camera drones were in high demand, and supply had dried up from China. He tried to push the non-camera ones to me and echoed Rashid’s sentiments—”the built-in cameras aren’t any good sir, mount your own,” he said. Singh said he already has a waitlist of 10 people who want camera drones. He took my number and said,”you’re no 11, and I can’t promise when but I’ll give you a call,” he signed off but not before making a final sales pitch for the non-camera one.</p>
+<p>I wondered if the camera drone supply drying up had anything to do with the government cracking down on them. I asked the shopkeepers there but didn’t get any definitive answers.</p>
+<p>The drones are all shipped from China, the shopkeepers told me. And since there’s no warranty, they insist on giving you a demo before you make the purchase, lest you come back later to hound them with quality issues.</p>
+<p>They all assured me though, that once I buy the drone, although it does not come under any sort of warranty, if there are issues with it or repairs are needed, it’s available at the market at a price.</p>
+<p>The regulations around buying or flying drones are still unclear. Earlier this year, the DGCA published a draft consultation paper on <a href="http://factordaily.com/drones-coming-india-just-soon-cross-final-hurdle/">regulating drones in India</a>. It has been nearly 15 months since they started the consultation process.</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/buy-drone-in-bangalore-grey-market/">My quest to find drones in Bengaluru&#8217;s grey market</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The good, bad and ugly of Uber&#8217;s new carpooling service</title>
+		<link>http://factordaily.com/ubercommute-in-bangalore/</link>
+		<pubDate>Tue, 07 Jun 2016 03:00:10 +0000</pubDate>
+		<dc:creator><![CDATA[Rashmi R Padhy]]></dc:creator>
+				<category><![CDATA[Lifestyle]]></category>
+		<category><![CDATA[Featured]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1046</guid>
+		<description><![CDATA[<p>UberCommute was launched on 3 January 2016. I joined a good 6 months after that. </p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/ubercommute-in-bangalore/">The good, bad and ugly of Uber&#8217;s new carpooling service</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I have been an Uber driver for the last 10 days. More specifically, an <a href="https://newsroom.uber.com/india/commute/">uberCOMMUTE</a> driver. The concept is simple&#8211; if you regularly drive from a point to another, you can pool your car with someone who needs a ride and make some money too.</p>
+<p>I did not have a car earlier. When I got one, it took me about 45 days to get the ownership transferred to my name. This is mandatory before you can register as a driver for Uber&#8217;s carpooling service. So it took me a good 5-6 months after the service was first introduced to get on it.</p>
+<p>Here are some of my observations, based on my experience so far. Disclaimer: My views are subject to change as I do this more.</p>
+<h3><strong>It actually works</strong></h3>
+<p>This works. I&#8217;ve tried many carpooling apps since 2012. Unfortunately, none of them worked. But uberCOMMUTE actually works. And it works seamlessly. A rider can simply follow the same process he or she would otherwise follow to book a taxi. When there is a pooled car available on the route, a request is sent to the driver (me in this case). Once I accept the ride I get to see directions to the rider’s current location and destination.</p>
+<h3><strong>Meeting great people along the way, Great discussions</strong></h3>
+<p>I like meeting new people, talking to them, pitching my startup concept, getting feedback from them and learning of their behaviour and habits. I found that people are also equally eager to talk. At times, they have been really curious to know why I drive an Uber. One rainy evening in Bengaluru, I had a 3-hour drive back home. And thankfully, I picked up a passenger who made good conversation. This is when you start appreciating little things like good company!</p>
+<h3><strong>Kitna Deti Hai?</strong></h3>
+<p>When you are a driver, you earn. But it’s a bit confusing with Uber. What is my actual earning? Uber charges customers Rs 100, my screen shows Rs 80 and I get paid Rs 60. Sometimes, it charges the customer Rs 50, my screen shows Rs 120 and I get Rs 70. This is super confusing. If this is confusing to me, I can only imagine how bad it will be for Uber drivers. No wonder, I see many drivers maintaining a notebook to write down details of a trip.</p>
+<h3><strong>Without incentives, drivers might lose money</strong></h3>
+<p>Cab problem in India is a tough one to solve. These rides do not really pay for your fuel or time. For a 15-kilometer, 3-hour ride, I got Rs 70. I now understand the plight of the regular drivers. If these incentives go away, or if they are lowered, drivers will lose money on every ride. That is a really bad problem to have.</p>
+<h3>Some things are beyond repair</h3>
+<p>UberCommute was launched on 3 January 2016. I joined a good 6 months after that. I assumed that there would a lot of people using the service already. Here are some stats which the company mentions on its blog.</p>
+<ul>
+<li>Carpooling now makes up nearly half of all our trips in San Francisco and over 30 percent in Los Angeles.</li>
+<li>In its first eight months in LA, passengers did over five million carpool trips–cutting the number of kilometers driven across town by 12.7 million and carbon dioxide pollution by 1,400 metric tons.</li>
+</ul>
+<p>So I’m naturally surprised when all the riders I got were first time users of of the service. All 15 of them.</p>
+<p>I’m really curious to know how many people have volunteered to pool their cars using this service. How many give rides regularly?</p>
+<h3><strong>So why is all this ugly?</strong></h3>
+<p>The ugly reality of Indian society is that <a href="http://qz.com/638268/the-unbearable-hypocrisy-of-the-indian-elite/">we are hypocrites</a>. And we have a <a href="https://newint.org/features/2013/01/01/india-elite-sense-of-entitlement/">deep rooted sense of entitlement</a>. While everyone wants the clean air and less traffic, no one really wants to do anything about it. As if waiting for someone to wave a magic wand and make things better overnight. While everyone is happy sharing a video or article on carpooling, they are not really willing to go the distance to actually make it happen.</p>
+<p>Secondly, I believe Uber has also failed here. While they promote Uber Commute a lot elsewhere, they have not really done enough promotion here in India. Is it because they do not want to annoy their regular drivers, or the taxi unions? Or is it because they do not care enough about the traffic condition of India?<br />
+In my opinion, everyone who drives a car should register to carpool. Everyone should play their role in reducing the city’s traffic and pollution. It is good that people are now paid to do that. Every bit counts.</p>
+<p>PS: I have earned about Rs.1500/- for this over the last 10 days. I am planning to donate it.</p>
+<p>Also read: <a href="https://www.facebook.com/notes/factordaily/what-a-top-media-executive-learnt-from-being-an-uber-driver-for-a-week/1760951894137942/">What a top media executive learnt from being an Uber driver for a week</a></p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/ubercommute-in-bangalore/">The good, bad and ugly of Uber&#8217;s new carpooling service</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Buying a drone in India? It won’t end well for you</title>
+		<link>http://factordaily.com/buying-a-drone-in-india/</link>
+		<pubDate>Mon, 06 Jun 2016 05:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[Jayadevan PK]]></dc:creator>
+				<category><![CDATA[Lifestyle]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1039</guid>
+		<description><![CDATA[<p>You can’t even buy a drone abroad and bring it to India, because you have to declare it when you fly in. </p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/buying-a-drone-in-india/">Buying a drone in India? It won’t end well for you</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Drones are all the rage now. But if you are in India, you won&#8217;t be able to import one legally. The easiest way to buy a drone in India is to buy one online &#8212; and a few people have already done that, including this <a href="http://www.amazon.com/JJRC-Hexacopter-6Axis-Headless-Quadcopters/dp/B012Z1BD4S">tiny drone</a> that my colleague Anand bought online.</p>
+<p>Buying a drone online is also in a legal grey area (more on that later). But I was willing to risk it. So last month I ordered one from Gearbest, a website that sells drones and other cool stuff. I even paid extra shipping to make sure it reaches me on time. But then, there was no sign of it even after 10 days.</p>
+<p>I tracked the shipment down and found out that it had been handed over to the customs officers in Mumbai. I decided to call them and find out what’s happening. After calling a <a href="http://www.customsmumbaiairport.gov.in/forms/Content.aspx?LinkID=43"> few different numbers</a>, I reached the desk of an officer at the parcel sorting office to find out that the drone may not reach me at all.</p>
+<blockquote><p>&#8220;You will have to get a clearance from the wireless planning and coordination wing,&#8221; he said.</p></blockquote>
+<p>The what? It turned out that the WPC is a branch of the ministry of communications in India. From my childhood, I vaguely recalled that these are the folks who give you Ham radio licenses. You have to write a test to get that license.</p>
+<p>Drones use radio waves to communicate back to the controller, so that’s where the WPC comes in. But that&#8217;s not all.</p>
+<p>The man on the other end of the line said:</p>
+<blockquote><p>You will also need to get a clearance from the Directorate General of Civil Aviation (DGCA)</p></blockquote>
+<p>He also volunteered that there have been quite a few such cases recently. By now, it was clear to me that as an ordinary citizen, I wasn&#8217;t going to be able to get these clearances.</p>
+<p>The regulations around buying or flying drones are still unclear. Earlier this year, the DGCA published a draft consultation paper on regulating drones in India. It has been nearly 15 months since they started the consultation process. Here are some key points, as <a href="http://factordaily.com/author/pranav/">Pranav</a> pointed out in our earlier post about <a href="http://factordaily.com/drones-coming-india-just-soon-cross-final-hurdle/"> drones in India </a>.</p>
+<ol>
+<li>Every drone sold in India must have a Unique Identification Number (UIN).</li>
+</ol>
+<ol start="2">
+<li>Every person flying a drone must have a permit.</li>
+</ol>
+<ol>
+<li>If you’re flying a drone below 200 feet from ground level, you will need a permit from your local administration.</li>
+<li>If you’re flying above 200 feet, you will need one from the DGCA.</li>
+</ol>
+<ol start="3">
+<li>You’ll need to submit an application for this permit at least 90 days before you actually fly a drone.</li>
+</ol>
+<p>So essentially, you are going to need a license and a number plate. If you search online, you’ll soon realise that the government considers these drones a ‘major security threat.’ So promptly, they’ve put an import restriction on them. You can’t even buy a drone abroad and bring it to India, because you have to declare it when you fly in. And then it goes to the customs and you know what happens then. Drones are part of ‘<a href="http://mashable.com/2016/03/02/india-drones-duties/"> prohibited and dutiable </a>’ items for the Indian customs now.</p>
+<p>So until the government clears the air on regulation, my ambitions to legally own a drone will have to stay grounded.</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/buying-a-drone-in-india/">Buying a drone in India? It won’t end well for you</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Telcos are just data wheelers, they should be neutral to what flows through them: TRAI Chairman R S Sharma</title>
+		<link>http://factordaily.com/trai-chairman-r-s-sharman-on-net-neutrality/</link>
+		<comments>http://factordaily.com/trai-chairman-r-s-sharman-on-net-neutrality/#comments</comments>
+		<pubDate>Mon, 06 Jun 2016 02:22:05 +0000</pubDate>
+		<dc:creator><![CDATA[Team FactorDaily]]></dc:creator>
+				<category><![CDATA[Future]]></category>
+		<category><![CDATA[Airtel]]></category>
+		<category><![CDATA[differential pricing]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[net neutrality]]></category>
+		<category><![CDATA[R S Sharma]]></category>
+		<category><![CDATA[TRAI]]></category>
+		<category><![CDATA[Vodafone]]></category>
+		<category><![CDATA[zero-rating]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1031</guid>
+		<description><![CDATA[<p>The Chairman of India's Telecom Regulatory Authority of India (TRAI) goes into the details of the issue of net neutrality and free content or services. </p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/trai-chairman-r-s-sharman-on-net-neutrality/">Telcos are just data wheelers, they should be neutral to what flows through them: TRAI Chairman R S Sharma</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ram Sewak Sharma&#8217;s world view is a unique one in the Indian development milieu. A world view forged from 37 years with the Indian Administrative Service and of a career technologist who writes computer code as a hobby, and, in a previous avatar, helped architect and roll out the Aadhar personal ID project.</p>
+<p>That makes Sharma perhaps the best-suited mandarin in India today to shape Internet policy as Chairman of the Telecom Regulatory Authority of India (TRAI). In an interview with FactorDaily&#8217;s <a href="http://factordaily.com/author/pranav/">Pranav Dixit</a> and <a href="http://www.twitter.com/joseyjohn">Josey Puliyenthuruthel</a>, he lays out his vision of how 1.2 billion Indians will access the Internet, and also clarifies his position about net neutrality, and whether TRAI&#8217;s recent consultation paper that talks about making content available across operators for free, goes against its spirit.</p>
+<p>Edited excerpts:</p>
+<p><strong><br />
+Let&#8217;s start with a 101 question. From a regulatory perspective, shouldn&#8217;t the approach be, &#8220;Hey boss, let’s not put anything that comes in the way of fast-changing technology&#8221; with a few caveats on national security, social good, etc</strong><strong>? </strong></p>
+<p>I think broadly I endorse that view. I personally feel that the overarching objective should be to allow technology to proceed, innovations to proceed, new ideas to come in, new business models to develop&#8230; There is no doubt about that. I have no issues with that.</p>
+<p>Having said that, there are certain situations here [in India] one has to modify the regulation. I would not say regulation must be used to protect legacy business models. That’s not my approach. But many a time, new models come in which essentially render the existing models of service delivery of existing operators obsolete, redundant, or very costly. While we should not put any obstacles in the path of innovators, we should also not put any obstacles in the path of the operators that they suffer a disadvantage compared to the innovation and new things happening. We should continue to evolve regulation so that while we don’t protect the interest of the operators, we see that the regulatory imbalance, which sometimes gets created, is eliminated or minimised. That&#8217;s my broad approach.<br />
+<strong><br />
+It’s a tightrope walk.</strong></p>
+<p>Yes, it is a tightrope walk; I agree with you. But the free flow of things can also result in certain situations which may not be desirable. For example, the whole issue of network neutrality and differential pricing. Now what happens is that in the typical business model, the content providers tie up with pipe providers. It’s not a technology issue, it’s a business issue. You’ve created a situation which is actually counter productive. My other view is that in a developing tech world, we should have more and more unbundling of things. Integration of things creates problems. Then, you have the situation where you start leveraging the advantage in one to have a business advantage in another area.</p>
+<p><strong>Can you give us an example?<br />
+</strong><br />
+A simple example is the network. There are many network providers who have now got a banking license. So suppose you allow a network provider to charge differential pricing, which is not only zero pricing but also infinity pricing — both subsidy and premium.</p>
+<p>Now Indian Post also has a banking license, so does PayTM. These guys, unlike Airtel or Vodafone, have no pipe. If the telcos decide among themselves that if you go to Airtel Bank, for instance, we will not charge anything to customers, but if you go to India Post, I will charge you 20 times and will also throttle you [by reducing Internet access speeds while accessing you]. So you can essentially kill India Post. Similarly, small innovators, if they really create an interesting application, product or business model, they will now have to run to the telcos to allow them access.</p>
+<p>This becomes a very dangerous situation where you introduce a huge amount of inefficiency in the system. You also introduce another level where instead of focusing on improving your content and experience, you start having another complexity in your business where you have to run after the telecom operators and plead with them to not negatively differentiate your content.</p>
+<p>So from a regulation perspective, we don’t want to over-regulate things, but we also we shouldn&#8217;t not regulate things that we should regulate.</p>
+<p><strong>TRAI&#8217;s <a href="http://www.trai.gov.in/WriteReadData/ConsultationPaper/Document/CP_07_free_data_consultation.pdf">new consultation paper</a> released in May talks about content being made available for free across telecom operators. Could you explain how that co-exists with your February consultation paper that banned differential pricing?</strong></p>
+<p>This is actually something I have never been able to explain properly. Or somehow, people have got it wrong and said that this is actually going back on net neutrality. This is actually completely false.<br />
+With differential pricing, what we decided was that telcos will not be able to differentiate between where you came from, where you are going, or what your packet contains. So zero-rating is not possible.</p>
+<p>The Facebook guys had come to us and I told them that I have no problems if you do real charity [with Free Basics]. Which means that if you adopt certain websites and say irrespective of which telco or ISP you come to these websites, you won’t be charged anything because Facebook will pick up the tab [for the data]. Because essentially, net neutrality means that networks should be neutral about what flows through them. They should be agnostic. They are just data wheelers, so they should get paid for the data wheeling part.</p>
+<p>[With the latest paper] We are exploring a 1-800 equivalent in the data world. Currently, toll-free numbers work because whichever one you call, there is an architecture in place that ensures that the bill is picked up by whoever provides the toll-free number.</p>
+<p><strong>So theoretically, in such a system, if Facebook picks up the tab&#8230;</strong></p>
+<p>Correct, and picks it up for every operator. So this is the broad policy. This, in no way, violates the basic principle of the network being neutral.</p>
+<p>What we are saying is: can there be a telecom provider-agnostic automated mechanism, which can allow some websites to offer free visitation? Suppose there is some health website. You say, as an incentive, the customer will not be charged for data access. The government of India may decide that for this e-governance website, education website, health website, can we have toll free access? This should be without the website having an agreement with the telcos. Can we have an automated, universally available system? We are merely exploring if the regulator has a role to play in facilitating this. Maybe it can also happen on its own. I don’t understand how this violate net neutrality.</p>
+<p><strong>But you still run into the problem of rich websites being able to afford this over the ones that can’t.<br />
+</strong><br />
+Yeah, there’s no problem in that.</p>
+<p><strong>So if a Netflix wants to do this, it can, but if I have a small startup that can’t afford to subsidise data for the people who access me.</strong></p>
+<p>That’s your problem. That’s not an interface of network and content. Today Flipkart sells products at a 30% discount, which a new website can’t afford. This is business stuff, not net neutrality stuff.</p>
+<p><strong>It still gives the rich guy an advantage.<br />
+</strong><br />
+Yes, it does, but it doesn’t give advantage to the network provider. Which law can prevent giving free books or shirts or anything else to people who visit your website? That’s your business strategy.<br />
+What we are saying is: can there be an architecture for this? The architecture may, in the end, not be useful at all. We are talking about a situation where the telcos don’t participate in an agreement or a disagreement [with individual websites] at all.</p>
+<p><strong>How will this platform or architecture work?</strong></p>
+<p>I don&#8217;t have an answer! If I had the answer, I wouldn&#8217;t have put out a consultation paper.</p>
+<p><strong>Let&#8217;s imagine the platform then. </strong></p>
+<p>(Smiles) The telcos will not probably be aware of this. Let&#8217;s put it this way. You visit a website. After that, the website asks you how much I spent (on data access) and recharges my account. What we are talking about is a situation where telcos don’t participate in agreement, disagreement, etc. This platform must be agnostic to all the pipes.</p>
+<p>Let’s say there was an API that every telco is expected to expose. The API would have details like which data plan you are on, which a website would be able to tap into, and reimburse you for the data and time you spend on the website directly without the telco having any idea at all. Just like the current recharge API, which means if I know your number, I can recharge your account.</p>
+<p>The only thing that that must be understood is that going back on net neutrality and all that is a bogus argument. One argument was that if people want free what is your problem. Now free in [the earlier Free Basics kind of] architecture is bad, free itself is not bad.</p>
+<p><strong>Could you talk about VoIP and the regulation around those services?<br />
+</strong><br />
+Internet telephony has a lot of issues, but why should we not have it in India? Currently, telcos cannot provide VoIP services in India because of licensing issues, which we want to solve. Telcos should not have a disadvantage. WhatsApp doesn’t have to share data, surveillance, etc. On the other hand, telcos have a lot of obligations. So their idea was same service same rule.</p>
+<p>Look, we will not like to restrict technology. At the same time, just because you are a licensee doesn’t mean you should be disabled from using that technology. So we are exploring if there are other issues which would need to be addressed in internet telephony.</p>
+<p><strong>But are you going to take a position on whether services like Skype should or should not apply for a license?<br />
+</strong><br />
+That will depend on the result of the consultation paper. The problem is that these “activists” assume that you have taken a position already when you release a consultation paper. As responsible citizens, we should allow debate to take place, then we can take a call. Are we going to allow or disallow [certain things]&#8230;how can you presume those things? When we begin a consultation, we are completely open-mined.</p>
+<p><strong>Will there be a revenue share for Internet telephony then, like it is there for voice services provided by telcos?</strong></p>
+<p>I can’t answer that. That will depend on the results of the consultation paper.</p>
+<p><strong>The February consultation paper exempts content provided over CECN (Closed Electronics Communication Networks) from the regulations against differential pricing. How did this clause enter the paper considering it hadn’t been brought up in any consultation process or open house before?</strong></p>
+<p>Just because it didn’t come up doesn’t mean we can’t talk about it. Look, regulation is going to apply only on the internet. So the ban against differential pricing is for the internet, not the non-internet [CECN]. What we did in the February paper was make it explicit that regulation will not apply to something that is not on the internet.</p>
+<p>People are saying this is a loophole. [<em>Editor&#8217;s note:</em> Airtel, for instance, being able to provide a video streaming service only to its own subscribers for free]. I am saying that even if this was not there, could you apply this regulation on the non-internet? No.</p>
+<p><strong>Still, the regulatory regime doesn’t have enough disincentives to deter rule-breakers. That&#8217;s been a problem from the very beginning of TRAI.</strong></p>
+<p>We have already given a recommendation to the government saying please give us power. You have given us the responsibility of consumer protection. Protection against what? Protection against who? And how can you protect if you don’t have any teeth?</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/trai-chairman-r-s-sharman-on-net-neutrality/">Telcos are just data wheelers, they should be neutral to what flows through them: TRAI Chairman R S Sharma</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://factordaily.com/trai-chairman-r-s-sharman-on-net-neutrality/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Why Apple making Shah Rukh Khan its brand ambassador is hard to believe</title>
+		<link>http://factordaily.com/reports-apple-making-shah-rukh-khan-brand-ambassador-hard-believe/</link>
+		<pubDate>Fri, 03 Jun 2016 07:59:28 +0000</pubDate>
+		<dc:creator><![CDATA[Ramarko Sengupta]]></dc:creator>
+				<category><![CDATA[Companies]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[apple brand ambassador]]></category>
+		<category><![CDATA[Apple India]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Shah Rukh Khan]]></category>
+		<category><![CDATA[Tim Cook]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1027</guid>
+		<description><![CDATA[<p>This morning many of you have may have woken up to news reports citing anonymous sources that Apple in India is all set to make Bollywood superstar Shah Rukh Khan its brand ambassador. While Khan does endorse big international brands like the iconic swiss watchmaker Tag Heuer, I find it hard to believe that Apple [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/reports-apple-making-shah-rukh-khan-brand-ambassador-hard-believe/">Why Apple making Shah Rukh Khan its brand ambassador is hard to believe</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>This morning many of you have may have woken up to <a href="http://www.pc-tablet.co.in/apple-reportedly-appoint-bollywood-star-shahrukh-khan-brand-ambassador-india/30657/">news reports </a>citing anonymous sources that Apple in India is all set to make Bollywood superstar Shah Rukh Khan its brand ambassador.</p>
+<p>While Khan does endorse big international brands like the iconic swiss watchmaker Tag Heuer, I find it hard to believe that Apple will have him or anybody else as a brand ambassador.</p>
+<p>It’s possible that Apple might tie-up with Khan for a marketing collaboration. But Apple just doesn’t have a history of celebrity brand ambassadors. Have there been Apple advertisements featuring celebrities? Sure. Have there been celebrity partnerships? Yes. But have they had any brand ambassadors? No.</p>
+<p>There have been celebrities like Jamie Foxx, John Travolta, Lake Bell, and others who have appeared in ads for Apple. But all these associations have been marketing collaborations, and none of them have been brand ambassadors as such.</p>
+<p>Khan has been the brand ambassador for Nokia phones in India in the past. And Apple chief Tim Cook met him among other celebrities on his recent visit to India. He also went to watch an IPL cricket match. Cook has said on record of his meetings that he was here to learn about the people, the culture, and how business was done in the country.</p>
+<p>While Apple is serious about its India business and Cook has said that they are in the country for the long haul, Faisal Kawoosa, Lead Analyst at CMR’s Telecom Practice says, “Apple is a niche product, and will remain a niche product, no way can they scale drastically.”</p>
+<p>On brand endorsement, Kawoosa said that Apple’s logo is perhaps its biggest ambassador. He said it is likely that Apple may look at certain partnerships to tap into the Indian market further.</p>
+<p>“I think Tim Cook realises the importance of cricket in India, and he may try to tap into that, and there Shah Rukh’s IPL team KKR may come in,” Kawoosa added.</p>
+<p>In the premium smartphone segment (₹30,000 upwards) in India, Apple held the second spot in terms of market share after Samsung in 2015, according to CMR. India is one of the fastest growing smartphone markets in the world and Apple is likely to gain from the 51% growth expected in 2016, it said.</p>
+<p>Apple India did not want to comment on the story.</p>
+<p>Also read: <a href="http://factordaily.com/apple-store-open-delhi-bengaluru-delhi-end-2017/">Apple Stores to open in Delhi, Bengaluru and Mumbai before end-2017</a></p>
+<p>GFX: <a href="https://twitter.com/nikhilrajp">Nikhil Raj</a></p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/reports-apple-making-shah-rukh-khan-brand-ambassador-hard-believe/">Why Apple making Shah Rukh Khan its brand ambassador is hard to believe</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Game on: Flipkart&#8217;s online gaming tournament kicks off, live-stream on Amazon&#8217;s Twitch</title>
+		<link>http://factordaily.com/flipkart-online-gaming-championship/</link>
+		<pubDate>Fri, 03 Jun 2016 06:14:41 +0000</pubDate>
+		<dc:creator><![CDATA[Jayadevan PK]]></dc:creator>
+				<category><![CDATA[Lifestyle]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1024</guid>
+		<description><![CDATA[<p>The tournament will be live-streamed on streaming platform Twitch, owned by Amazon.</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/flipkart-online-gaming-championship/">Game on: Flipkart&#8217;s online gaming tournament kicks off, live-stream on Amazon&#8217;s Twitch</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Online retailer Flipkart is launching a gaming championship. The Flipkart Gaming Online Championship (FGOC) will be a month long online tournament which starts today and ends on 11 July.</p>
+<p>There will be four games&#8211; FIFA, Counter Strike: Global Offensive (CS:GO), League of Legends (LOL) and Defense of the Ancients 2 (DotA 2)&#8211; at the tournament. Each game will be played for a week, with three team games of five players each and one game for individual gamers, the company said.</p>
+<p>The tournament will be live-streamed on streaming platform Twitch, <a href="http://venturebeat.com/2014/08/25/amazon-acquires-twitch-worlds-largest-e-tailer-buys-largest-gameplay-livestreaming-site/">owned by Amazon</a>. &#8220;At Flipkart, we have witnessed close to 50% growth in this category in the last six months alone,&#8221; said Adarsh K Menon, Vice President, Electronics &amp; Auto at Flipkart.</p>
+<p>The company sells gaming related products from brands such as Alienware, Dell, Sony and Microsoft. &#8220;We expect this demand to double in the next six months,&#8221; said Menon. Flipkart will give away gift vouchers totalling Rs 1.2 lakh to winners.</p>
+<p>Also read: <a href="http://factordaily.com/flipkart-revenue-profit-2015/">6 charts that tell you about Flipkart’s growth</a></p>
+<p><em>Lead Image: Flipkart</em></p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/flipkart-online-gaming-championship/">Game on: Flipkart&#8217;s online gaming tournament kicks off, live-stream on Amazon&#8217;s Twitch</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Drones are coming to India — just as soon as they cross this final hurdle</title>
+		<link>http://factordaily.com/drones-coming-india-just-soon-cross-final-hurdle/</link>
+		<pubDate>Fri, 03 Jun 2016 04:48:15 +0000</pubDate>
+		<dc:creator><![CDATA[Pranav Dixit]]></dc:creator>
+				<category><![CDATA[Future]]></category>
+		<category><![CDATA[CUVSI]]></category>
+		<category><![CDATA[DGCA]]></category>
+		<category><![CDATA[drones]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[regulation]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1021</guid>
+		<description><![CDATA[<p>Drones are coming to the Indian skies. At least that’s what we’ve been told for more than a year now. But 15 months after a a senior Directorate General of Civil Aviation (DGCA) official told The Indian Express that the regulator would clear the norms for the commercial use of drones in India “in the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/drones-coming-india-just-soon-cross-final-hurdle/">Drones are coming to India — just as soon as they cross this final hurdle</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="p1">Drones are coming to the Indian skies. At least that’s what we’ve been told for more than a year now.</p>
+<p class="p1">But 15 months after a a senior Directorate General of Civil Aviation (DGCA) official told <a href="http://indianexpress.com/article/india/india-others/regulator-set-to-clear-norms-for-commercial-use-of-drones/">The Indian Expres</a><a href="http://indianexpress.com/article/india/india-others/regulator-set-to-clear-norms-for-commercial-use-of-drones/">s</a> that the regulator would clear the norms for the commercial use of drones in India “in the next one or two months”, there was no sign that anyone at the DGCA still cared.</p>
+<p class="p1">“We’ve been behind them since then,” says John Livingstone, a former Indian Navy officer and President of the Consortium of Unmanned Vehicle Systems India (CUVSI), a drone industry lobby that includes drone manufacturers from across the country.</p>
+<p class="p1">In the first week of May, the DGCA suddenly showed signs of life. It released an 8-page <a href="http://www.medianama.com/wp-content/uploads/DGCA-Drone-Circular.pdf">draft paper</a> about drone regulation in India, inviting stakeholders to send in comments by May 21, before the regulator releases a final version.</p>
+<p class="p1">Civilians — regular people like you and me — are increasingly using drones for surveys, commercial photography, assessing damage to property and life in natural calamities, and more, acknowledges the DGCA in the draft. We need rules.</p>
+<p class="p1">Here are some of the highlights of the DGCA draft paper:</p>
+<p class="p1">1. Every drone sold in India must have a Unique Identification Number (UIN).</p>
+<p class="p1">2. Every person flying a drone must have a permit. If you’re flying a drone below 200 feet from ground level, you will need a permit from your local administration. If you’re flying above 200 feet, you will need one from the DGCA.</p>
+<p class="p1">3. You’ll need to submit an application for this permit at least 90 days before you actually fly a drone.</p>
+<p class="p1">For his part, Livingstone says that India’s drone makers and people in the drone industry that his lobby represents, are mostly satisfied with the DGCA’s recommendations. “The good thing, from the industry’s point of view is that we finally have some regulations after mere promises of one for a year,” he says.</p>
+<p class="p1">That doesn&#8217;t mean that the CUVSI is settling for what the DGCA has put out, though. On the scorching afternoon of May 16, over two dozen members of the CUVSI gathered in a cramped classroom on the second floor of a building in Amity University’s Noida campus to discuss the draft paper.</p>
+<p class="p1">“We need to ask them to increase the requirement of a permit from the DGCA from 200 feet to 400 feet, said Pravin Prajapati, a project engineer at the Indian government’s Department of Science and Technology.</p>
+<p class="p1">This suggestion was unanimously agreed upon, and made it to the letter of recommendations that the CUVSI eventually sent to the DGCA for consideration.</p>
+<p class="p1">“Personally, 200 feet is quite enough,” Livingstone told me later. “But at 400 feet, you are at liberty to fly further and do many more things. And, of course, the filmmakers and the wedding photographers are worried about what they will do if they need to take a shot over 200 feet.”</p>
+<p class="p1">India’s drone industry is also worried about what the 90-day window to get a permit will mean for it. “Everything needs to be faster,” says Livingstone. “You can’t expect a regular person to wait 90 days to wait for a permit before they can use the drone they’ve bought.” It’s a bit like buying a car and not being able to drive it because your driving license, which you applied for two months ago, still isn’t here.</p>
+<p class="p1">The CUVSI is also pitching itself to the DGCA to be a certification agency for drone pilots to train them to safely operate drones. “We have more than 4 qualified military UAV [Unmanned Aerial Vehicle] pilots who have more than 10,000 flying hours combined on the Searcher and Heron MALE (Medium Altitude Long Endurance) UAVs that are presently being operated in the Indian Armed Forces” says the CUVSI’s letter to the DGCA.</p>
+<p class="p1">This is because the DGCA’s recommendations on this front are extremely ambiguous, says Livingstone. “Their recommendations only say that the person flying a drone should have ‘adequate knowledge’,” he says. “Having pilots who are trained and certified would go a long way in flying drones safely.”</p>
+<p class="p1">So what happens next? The DGCA is currently in the process of reviewing the responses to its recommendations from the CUVSI and other stakeholders. It may take a couple of months to draw up final regulations for drones in India — or it can take its own sweet time, as we’ve discovered.</p>
+<p class="p1">Until then, drones in India remain in a regulatory grey zone. If you’re in the business — maybe you do wedding photography, or do aerial surveys of farms using drones — you’re probably going to want to hold off for a while to avoid any legal trouble. If you’re a drone enthusiast, you can probably pick one up online or from your nearest electronics market — but make sure you don’t fly it on your terrace, in your neighbourhood, or even in your city. Take it outskirts, if you can, and remember to fly as low as you possibly can.</p>
+<p class="p1">When the DGCA does make up its mind, we’ll be right here to tell you it’s OK for take-off.</p>
+<p class="p1"><em>If you&#8217;d like to read the CUVSI&#8217;s list of recommendations to the DGCA in its entirety, you can find it below. </em></p>
+<p style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;"><a style="text-decoration: underline;" title="View CUVSI&amp;#x27;s Letter to DGCA on Scribd" href="https://www.scribd.com/doc/314628017/CUVSI-s-Letter-to-DGCA">CUVSI&amp;#x27;s Letter to DGCA</a></p>
+<p><iframe id="doc_86892" class="scribd_iframe_embed" src="https://www.scribd.com/embeds/314628017/content?start_page=1&amp;view_mode=scroll&amp;show_recommendations=true" width="100%" height="600" frameborder="0" scrolling="no" data-auto-height="false" data-aspect-ratio="undefined"></iframe></p>
+<p><em>Lead image: <a href="http://www.pixabay.com">Pixabay</a></em></p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/drones-coming-india-just-soon-cross-final-hurdle/">Drones are coming to India — just as soon as they cross this final hurdle</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Suddenly the passport officer nudged me and asked, &#8216;You are so fat no? What do you eat?&#8217;</title>
+		<link>http://factordaily.com/passport-office-harrowing-experience/</link>
+		<pubDate>Thu, 02 Jun 2016 10:01:20 +0000</pubDate>
+		<dc:creator><![CDATA[Shrabonti Bagchi]]></dc:creator>
+				<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[government]]></category>
+		<category><![CDATA[govt]]></category>
+		<category><![CDATA[passport]]></category>
+		<category><![CDATA[social media]]></category>
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://factordaily.com/?p=1011</guid>
+		<description><![CDATA[<p>Blogger calls out govt officer's unprofessional and inappropriate behaviour</p>
+<p>The post <a rel="nofollow" href="http://factordaily.com/passport-office-harrowing-experience/">Suddenly the passport officer nudged me and asked, &#8216;You are so fat no? What do you eat?&#8217;</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>At the Passport Seva Kendras (PSK) in Bengaluru, run by Tata Consultancy Services, you may be forgiven for wondering if you had walked into an alternate universe populated by extremely humanoid robots. Though efficient and quick, the PSKs are soulless and cold, with not a smile on display and a studied lack of warmth. Everything there can give you the chills — from the piped music to the hospital-like grimness. However, the process is so fast and automated that one doesn&#8217;t really mind the lack of human contact. As anyone who has been to the TCS-run PSKs can vouch for, the systems work efficiently and technology here is a huge enabler.</p>
+<p>The Regional Passport Offices, by contrast, are dens of chaotic inefficiency and downright unprofessionalism. Here, bureaucracy and whimsy rule, and ordinary citizens are at the mercy of babus. That&#8217;s what blogger <a href="https://twitter.com/monikamanchanda">Monika Manchanda</a> found out when she went to the Regional Passport Office in Koramangala, Bengaluru because of some mix-up with her 8-year-old son&#8217;s passport.</p>
+<p>A vocal and outspoken person, Manchanda, who <a href="https://www.sinamontales.com/">blogs</a>, cooks, models, teaches and is a well-known face on Indian social media (recently, she was one of the speakers at the event #PositionOfStrength organised by Twitter India to talk about online bullying, especially of women) is not used to being reduced to her body type. Outraged, she tweeted about the entire experience and then Storified her tweets. They have caught the attention of the interwebs and are now being widely shared. It seems like most of us have faced the Passport Officer from Hell at some point or the other in our lives.</p>
+<p>Here are her tweets detailing her harrowing experience, in sequence:</p>
+<div class="storify"><iframe src="//storify.com/monikamanchanda/the-ordeal-at-the-regional-passport-office/embed?border=false" width="100%" height="750" frameborder="no"></iframe></div>
+<div class="storify"></div>
+<div class="storify"></div>
+<div class="storify">Do government officials have the right to be over-familiar and intrusive? Would you prefer the cold comforts of the Passport Seva Kendras? Tell us at hello@factordaily.com.</div>
+<div class="storify"></div>
+<div class="storify"> <em>Lead visual: Nikhil Raj</em></div>
+<div class="storify"><script src="//storify.com/monikamanchanda/the-ordeal-at-the-regional-passport-office.js?border=false"></script><noscript>[<a href="//storify.com/monikamanchanda/the-ordeal-at-the-regional-passport-office" target="_blank">View the story &#8220;The Ordeal at the Regional Passport Office&#8221; on Storify</a>]</noscript></div>
+<p>The post <a rel="nofollow" href="http://factordaily.com/passport-office-harrowing-experience/">Suddenly the passport officer nudged me and asked, &#8216;You are so fat no? What do you eat?&#8217;</a> appeared first on <a rel="nofollow" href="http://factordaily.com">FactorDaily</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
