@@ -22,7 +22,6 @@
   "homepage": "https://github.com/perimetral/rss-parser#readme",
   "dependencies": {
     "jsdom": "^9.2.1",
-    "mongodb": "^2.1.18",
-    "xml2js": "^0.4.16"
+    "mongodb": "^2.1.18"
   }
 }
