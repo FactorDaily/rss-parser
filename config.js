@@ -1,16 +1,16 @@
 let c = {
 
 	//	Full MongoDB connection URL (you can specify user and password here)
-	mongoUrl: 'mongodb://localhost:27027/rss-parser',
+	mongoUrl: 'mongodb://localhost:27017/rss-parser',
 
 	//	Collection name
 	mongoCollection: 'contents',
 
 	//	String to parse or buffer to convert to string to parse
-	input: '',
+	input: './feed.xml',
 
 	//	Tag list splitted by space values of which must be saved
-	filters: 'p',
+	filters: 'item',
 
 	//	Generator function for cases you need your own key generation
 	idGenerator: undefined,

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/perimetral/rss-parser#readme",
   "dependencies": {
+    "elasticsearch": "^12.1.3",
     "jsdom": "^9.2.1",
     "mongodb": "^2.1.18"
   }

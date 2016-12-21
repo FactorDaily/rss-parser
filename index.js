@@ -53,13 +53,14 @@ const parse = (options = {}) => {
 					let matching = w.document.querySelectorAll(x);
 					for (let k = 0; k < matching.length; k++) {
 						let chunk = undefined;
+						let contentId = undefined;
 						if (config.idGenerator) {
-							let contentId = config.idGenerator(x);
+							contentId = config.idGenerator(x);
 							chunk = { [contentId]: matching.item(k).innerHTML };
 						} else chunk = { [k]: matching.item(k).innerHTML };
 						output.insertOne(chunk, (ie, insertResult) => {
 							if (ie) config.loggerError(new Error(ie));
-							config.loggerSuccess(insertResult);
+							config.loggerSuccess(contentId, chunk);
 						});
 					};
 				});

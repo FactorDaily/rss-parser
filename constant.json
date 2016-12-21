@@ -1,0 +1,30 @@
+{
+	"integrations": [
+		{
+			"name": "elasticSearch",
+			"status": true
+		},
+		{
+			"name": "imageTagging",
+			"status": true
+		},
+		{
+			"name": "summarization",
+			"status": false
+		}
+	],
+	"elasticSearch": {
+		"url": "http://54.89.52.122:9200/",
+		"index":"gaia",
+        "type":"news"
+	},
+	"imageTagging": {
+		"url": "https://api.clarifai.com/v1",
+		"clientId": "e0i_sYR9YL4K-xO9v6YqQssOAS8HEgM73jlhFq8a",
+		"clientSecret": "LM5Uoi0q6rSyrDhYDl6unsu4gwqNEitkZBaQa-6U"
+	},
+	"summarization": {
+		"app_id": "48545afe",
+		"api_key": "b6e4f0accaf00eb297d8017d5b6d7b8f"
+	}
+}
