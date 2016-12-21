@@ -4,6 +4,7 @@ const rssParser = require('./index.js');
 
 var ELASTICSEARCH 	= require('elasticsearch');
 var CONSTANT 		= require('./constant.json');
+var HTTP            = require('http');
 
 
 /**
@@ -16,7 +17,44 @@ var ESCLIENT = new ELASTICSEARCH.Client( {
 });
 
 
+function writeXML(rssData){
+	
+		fs.writeFile('./feed.xml', rssData, function (err) {
+	  if (err) return console.log(err);
+	  console.log(rssData);
+	});
+		
+}
 
+
+
+function getRSS(callback) {
+
+    return HTTP.get({
+        host: '142.4.2.225',
+        path: '/feedfiles1/ianseng.rss'
+    }, function(response) {
+        // Continuously update stream with data
+        var body = '';
+        response.on('data', function(d) {
+            body += d;
+        });
+        response.on('end', function() {
+
+            // Data reception is done, do whatever with it!
+            //var parsed = JSON.parse(body);
+            
+            callback(body);
+        });
+    });
+
+}
+
+
+  
+  getRSS(writeXML);
+
+/*
 rssParser.parse({
     input: fs.readFileSync('./feed.xml', 'utf8'),
     idGenerator: (tag) => {
@@ -42,6 +80,7 @@ rssParser.parse({
     //  ... process runtime error someway
     console.log(e);
 });
+*/
 
 /**
  * Create Indexing in ES
