@@ -15,7 +15,7 @@
 	],
 	"elasticSearch": {
 		"url": "http://54.89.52.122:9200/",
-		"index":"gaia",
+		"index":"ians",
         "type":"news"
 	},
 	"imageTagging": {

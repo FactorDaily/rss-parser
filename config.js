@@ -1,7 +1,7 @@
 let c = {
 
 	//	Full MongoDB connection URL (you can specify user and password here)
-	mongoUrl: 'mongodb://localhost:27017/rss-parser',
+	mongoUrl: 'mongodb://localhost:27017/ians',
 
 	//	Collection name
 	mongoCollection: 'contents',

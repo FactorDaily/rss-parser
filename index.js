@@ -22,8 +22,14 @@ const parseCallback = (options = {}, callback) => {
 					let chunk = undefined;
 					if (config.idGenerator) {
 						let contentId = config.idGenerator(x);
-						chunk = { [contentId]: matching.item(k).innerHTML };
-					} else chunk = { [k]: matching.item(k).innerHTML };
+						chunk = { [contentId]: matching.item(k).innerHTML, "handle": contentId };
+						/**
+								
+								place the handle in the db for easier fetch
+							*/
+						
+					} else 
+					chunk = { [k]: matching.item(k).innerHTML };
 					output.insertOne(chunk, (ie, insertResult) => {
 						if (ie) config.loggerError(new Error(ie));
 						config.loggerSuccess(insertResult);
@@ -55,9 +61,17 @@ const parse = (options = {}) => {
 						let chunk = undefined;
 						let contentId = undefined;
 						if (config.idGenerator) {
-							contentId = config.idGenerator(x);
-							chunk = { [contentId]: matching.item(k).innerHTML };
-						} else chunk = { [k]: matching.item(k).innerHTML };
+							contentId = config.idGenerator(x);							
+							chunk = { [contentId]: matching.item(k).innerHTML, "handle": contentId };
+							/**
+								
+								place the handle in the db for easier fetch
+							*/
+						
+						} else 
+						{
+						chunk = { [k]: matching.item(k).innerHTML };
+						}
 						output.insertOne(chunk, (ie, insertResult) => {
 							if (ie) config.loggerError(new Error(ie));
 							config.loggerSuccess(contentId, chunk);

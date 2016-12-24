@@ -21,7 +21,37 @@ function writeXML(rssData){
 	
 		fs.writeFile('./feed.xml', rssData, function (err) {
 	  if (err) return console.log(err);
-	  console.log(rssData);
+	  else
+	  {
+		  
+		  console.log("now reading feeds");
+		  rssParser.parse({
+			    input: fs.readFileSync('./feed.xml', 'utf8'),
+			    idGenerator: (tag) => {
+			        return uuid.v4();
+			    },
+			    loggerError: (e) => {
+			        console.log('DATA INSERTING ERROR!');
+			        console.log(e.name);
+			        console.log(e.stack);
+			    },
+			     loggerSuccess: (id, data) => {
+			        console.log('DATA INSERTING Sucess!');
+			        
+			
+			        var content = data[id];
+			        var id = String(data._id);
+			
+			        console.log("****",id);
+			        create(content, id);
+			        
+			    }
+			}).catch((e) => {
+			    //  ... process runtime error someway
+			    console.log(e);
+			});
+	  }
+	  
 	});
 		
 }
@@ -30,6 +60,10 @@ function writeXML(rssData){
 
 function getRSS(callback) {
 
+  /**
+	  hardocoded because it comes from IANS
+	  
+  */
     return HTTP.get({
         host: '142.4.2.225',
         path: '/feedfiles1/ianseng.rss'
@@ -52,35 +86,11 @@ function getRSS(callback) {
 
 
   
-  getRSS(writeXML);
+getRSS(writeXML);
 
-/*
-rssParser.parse({
-    input: fs.readFileSync('./feed.xml', 'utf8'),
-    idGenerator: (tag) => {
-        return uuid.v4();
-    },
-    loggerError: (e) => {
-        console.log('DATA INSERTING ERROR!');
-        console.log(e.name);
-        console.log(e.stack);
-    },
-     loggerSuccess: (id, data) => {
-        console.log('DATA INSERTING Sucess!');
-        
 
-        var content = data[id];
-        var id = String(data._id);
 
-        console.log("****",id);
-        create(content, id);
-        
-    }
-}).catch((e) => {
-    //  ... process runtime error someway
-    console.log(e);
-});
-*/
+
 
 /**
  * Create Indexing in ES
@@ -95,7 +105,10 @@ function create(content, id) {
                 content: content
             }
         }, function (error, response) {
-            console.log(error);
+            if(error)
+            {
+	            console.log("unable to insert ", error);
+            }
             console.log(response);
         });
 }
