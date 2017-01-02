@@ -26,5 +26,10 @@
 	"summarization": {
 		"app_id": "48545afe",
 		"api_key": "b6e4f0accaf00eb297d8017d5b6d7b8f"
+	},
+	"mail": {
+		"email_id": "anahita.neogi@gmail.com",
+	     "password": "geeBaby123"
 	}
+	
 }

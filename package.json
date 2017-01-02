@@ -25,6 +25,7 @@
     "http": "0.0.0",
     "jsdom": "^9.2.1",
     "mongodb": "^2.1.18",
-    "node-uuid": "^1.4.7"
+    "node-uuid": "^1.4.7",
+    "nodemailer": "^2.7.0"
   }
 }

@@ -6,6 +6,8 @@ var ELASTICSEARCH 	= require('elasticsearch');
 var CONSTANT 		= require('./constant.json');
 var HTTP            = require('http');
 
+var NODEMAILER      = require('nodemailer');
+
 
 /**
  * ESCLIENT is ES CLient object
@@ -15,6 +17,18 @@ var ESCLIENT = new ELASTICSEARCH.Client( {
 		CONSTANT.elasticSearch.url
 	]
 });
+
+
+// Create reusable transporter object using SMTP transport
+var transporter = NODEMAILER.createTransport({
+    service : 'gmail',
+    auth: {
+        user: CONSTANT.mail.email_id,
+        pass: CONSTANT.mail.password
+    },
+    ignoreTLS : true
+});
+
 
 
 function writeXML(rssData){
@@ -64,7 +78,7 @@ function getRSS(callback) {
   */
     return HTTP.get({
         host: '142.4.2.225',
-        path: '/feedfiles1/ianseng.rss'
+        path: '/feedfiles1/tech.rss'
     }, function(response) {
         // Continuously update stream with data
         var body = '';
@@ -107,6 +121,29 @@ function create(content, id) {
             {
 	            console.log("unable to insert ", error);
             }
-            console.log(response);
+            else
+            {
+	            console.log('EXCELLENT');
+                transporter.sendMail({
+                    from: 'anahita.neogi@gmail.com', // sender address
+                    to: 'tn@factordaily.com', // list of receivers
+                    subject: 'IANS indexing done', // Subject line
+                    html: 'Latest news synced', // html body
+                    //attachments: [{filename: 'scratch.zip', path: './UserListInMemory.zip'}]
+                }, function (error, info) {
+                    if (error) {
+                        console.log('========Message sent==error=====', error);
+                      //  return reject(error);
+                    }
+                    console.log('========Message sent==info=====', info);
+                    if(!error){
+                        var response = {
+                            message: 'Email has been sent, please follow the instruction as per mail.',
+                            response: 'success'
+                        };
+                    }
+                });
+            }
+            
         });
 }
