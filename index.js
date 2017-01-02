@@ -18,21 +18,33 @@ const parseCallback = (options = {}, callback) => {
 		jsdom.env(input, (e, w) => {
 			filters.forEach((x, i, ar) => {
 				let matching = w.document.querySelectorAll(x);
+
 				for (let k = 0; k < matching.length; k++) {
 					let chunk = undefined;
-					if (config.idGenerator) {
-						let contentId = config.idGenerator(x);
-						chunk = { [contentId]: matching.item(k).innerHTML, "handle": contentId };
-						/**
-								
-								place the handle in the db for easier fetch
-							*/
-						
-					} else 
-					chunk = { [k]: matching.item(k).innerHTML };
-					output.insertOne(chunk, (ie, insertResult) => {
-						if (ie) config.loggerError(new Error(ie));
-						config.loggerSuccess(insertResult);
+					let contentId = undefined;
+					var strdata = matching.item(k).innerHTML;
+					var title= strdata.substring(strdata.lastIndexOf("<title>")+7,strdata.lastIndexOf("</title>"));
+					var link = strdata.substring(strdata.lastIndexOf("<link>")+6,strdata.lastIndexOf("<pubdate>"));
+					var publishDate = strdata.substring(strdata.lastIndexOf("<pubdate>")+9,strdata.lastIndexOf("</pubdate>"));
+					var description = strdata.substring(strdata.lastIndexOf("<description>")+13,strdata.lastIndexOf("</description>"));
+					var content = strdata.substring(strdata.lastIndexOf("<content>")+9,strdata.lastIndexOf("</content>"));						
+						chunk = { 
+							"title" : title,
+							"link" :link,
+							"publishDate" : publishDate,
+							"description" :description,
+							"content" :content,
+						};
+					
+					output.findOne({link: link},function(err, result) {
+						if (result === null){
+							output.insertOne(chunk, (ie, insertResult) => {
+								if (ie) config.loggerError(new Error(ie));
+								config.loggerSuccess(link, chunk);
+							});
+						} else {
+							console.log("data already exist")
+						}
 					});
 				};
 			});
@@ -60,21 +72,29 @@ const parse = (options = {}) => {
 					for (let k = 0; k < matching.length; k++) {
 						let chunk = undefined;
 						let contentId = undefined;
-						if (config.idGenerator) {
-							contentId = config.idGenerator(x);							
-							chunk = { [contentId]: matching.item(k).innerHTML, "handle": contentId };
-							/**
-								
-								place the handle in the db for easier fetch
-							*/
+						var strdata = matching.item(k).innerHTML;
+						var title= strdata.substring(strdata.lastIndexOf("<title>")+7,strdata.lastIndexOf("</title>"));
+						var link = strdata.substring(strdata.lastIndexOf("<link>")+6,strdata.lastIndexOf("<pubdate>"));
+						var publishDate = strdata.substring(strdata.lastIndexOf("<pubdate>")+9,strdata.lastIndexOf("</pubdate>"));
+						var description = strdata.substring(strdata.lastIndexOf("<description>")+13,strdata.lastIndexOf("</description>"));
+						var content = strdata.substring(strdata.lastIndexOf("<content>")+9,strdata.lastIndexOf("</content>"));						
+							chunk = { 
+								"title" : title,
+								"link" :link,
+								"publishDate" : publishDate,
+								"description" :description,
+								"content" :content,
+							};
 						
-						} else 
-						{
-						chunk = { [k]: matching.item(k).innerHTML };
-						}
-						output.insertOne(chunk, (ie, insertResult) => {
-							if (ie) config.loggerError(new Error(ie));
-							config.loggerSuccess(contentId, chunk);
+						output.findOne({link: link},function(err, result) {
+							if (result === null){
+								output.insertOne(chunk, (ie, insertResult) => {
+									if (ie) config.loggerError(new Error(ie));
+									config.loggerSuccess(link, chunk);
+								});
+							} else {
+								console.log("data already exist")
+							}
 						});
 					};
 				});

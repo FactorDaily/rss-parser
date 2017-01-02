@@ -37,8 +37,6 @@ function writeXML(rssData){
 			    },
 			     loggerSuccess: (id, data) => {
 			        console.log('DATA INSERTING Sucess!');
-			        
-			
 			        var content = data[id];
 			        var id = String(data._id);
 			
