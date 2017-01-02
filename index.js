@@ -78,7 +78,7 @@ const parse = (options = {}) => {
 						var publishDate = strdata.substring(strdata.lastIndexOf("<pubdate>")+9,strdata.lastIndexOf("</pubdate>"));
 						var description = strdata.substring(strdata.lastIndexOf("<description>")+13,strdata.lastIndexOf("</description>"));
 						var content = strdata.substring(strdata.lastIndexOf("<content>")+9,strdata.lastIndexOf("</content>"));						
-							chunk = { 
+						chunk = { 
 								"title" : title,
 								"link" :link,
 								"publishDate" : publishDate,
@@ -86,11 +86,13 @@ const parse = (options = {}) => {
 								"content" :content,
 							};
 						
+						contentId = config.idGenerator(x);	
+
 						output.findOne({link: link},function(err, result) {
 							if (result === null){
 								output.insertOne(chunk, (ie, insertResult) => {
 									if (ie) config.loggerError(new Error(ie));
-									config.loggerSuccess(link, chunk);
+									config.loggerSuccess(contentId, chunk);
 								});
 							} else {
 								console.log("data already exist")
