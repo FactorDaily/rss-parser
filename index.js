@@ -79,13 +79,12 @@ const parse = (options = {}) => {
 						var description = strdata.substring(strdata.lastIndexOf("<description>")+13,strdata.lastIndexOf("</description>"));
 						var content = strdata.substring(strdata.lastIndexOf("<content>")+9,strdata.lastIndexOf("</content>"));						
 						chunk = { 
-								"title" : title,
-								"link" :link,
-								"publishDate" : publishDate,
-								"description" :description,
-								"content" :content,
-							};
-						
+								title : title,
+								link :link,
+								publishDate : publishDate,
+								description :description,
+								content :content,
+							};						
 						contentId = config.idGenerator(x);	
 
 						output.findOne({link: link},function(err, result) {

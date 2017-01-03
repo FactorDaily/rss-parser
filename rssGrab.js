@@ -53,8 +53,10 @@ function writeXML(rssData){
 			        console.log('DATA INSERTING Sucess!');
 			        var content = data;
 			        var id = String(data._id);
+			       
+			        delete content["_id"];
+			        content.id = id;
 
-			
 			        console.log("****",id);
 			        create(content, id);
 			        
@@ -109,14 +111,12 @@ getRSS(writeXML);
  * Create Indexing in ES
  */
 function create(content, id) {
-
+		console.log("===============content======",content);
         ESCLIENT.create({
             index: CONSTANT.elasticSearch.index,
             type: CONSTANT.elasticSearch.type,
             id: id,
-            body: {
-                content: content
-            }
+            body: content
         }, function (error, response) {
             if(error)
             {
@@ -125,25 +125,25 @@ function create(content, id) {
             else
             {
 	            console.log('EXCELLENT');
-                transporter.sendMail({
-                    from: 'anahita.neogi@gmail.com', // sender address
-                    to: 'tn@factordaily.com', // list of receivers
-                    subject: 'IANS indexing done', // Subject line
-                    html: 'Latest news synced', // html body
-                    //attachments: [{filename: 'scratch.zip', path: './UserListInMemory.zip'}]
-                }, function (error, info) {
-                    if (error) {
-                        console.log('========Message sent==error=====', error);
-                      //  return reject(error);
-                    }
-                    console.log('========Message sent==info=====', info);
-                    if(!error){
-                        var response = {
-                            message: 'Email has been sent, please follow the instruction as per mail.',
-                            response: 'success'
-                        };
-                    }
-                });
+                // transporter.sendMail({
+                //     from: 'anahita.neogi@gmail.com', // sender address
+                //     to: 'tn@factordaily.com', // list of receivers
+                //     subject: 'IANS indexing done', // Subject line
+                //     html: 'Latest news synced', // html body
+                //     //attachments: [{filename: 'scratch.zip', path: './UserListInMemory.zip'}]
+                // }, function (error, info) {
+                //     if (error) {
+                //         console.log('========Message sent==error=====', error);
+                //       //  return reject(error);
+                //     }
+                //     console.log('========Message sent==info=====', info);
+                //     if(!error){
+                //         var response = {
+                //             message: 'Email has been sent, please follow the instruction as per mail.',
+                //             response: 'success'
+                //         };
+                //     }
+                // });
             }
             
         });
