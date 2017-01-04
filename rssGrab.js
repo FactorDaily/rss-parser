@@ -53,7 +53,7 @@ function writeXML(rssData){
 			        console.log('DATA INSERTING Sucess!');
 			        var content = data;
 			        var id = String(data._id);
-			       
+
 			        delete content["_id"];
 			        content.id = id;
 
@@ -111,7 +111,6 @@ getRSS(writeXML);
  * Create Indexing in ES
  */
 function create(content, id) {
-		console.log("===============content======",content);
         ESCLIENT.create({
             index: CONSTANT.elasticSearch.index,
             type: CONSTANT.elasticSearch.type,
