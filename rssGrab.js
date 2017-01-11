@@ -5,6 +5,7 @@ const rssParser = require('./index.js');
 var ELASTICSEARCH 	= require('elasticsearch');
 var CONSTANT 		= require('./constant.json');
 var HTTP            = require('http');
+var REQUEST 		= require('request');
 
 var NODEMAILER      = require('nodemailer');
 
@@ -52,13 +53,11 @@ function writeXML(rssData){
 			     loggerSuccess: (id, data) => {
 			        console.log('DATA INSERTING Sucess!');
 			        var content = data;
-			        var id = String(data._id);
-
-			        delete content["_id"];
-			        content.id = id;
-
+			        var id = String(data._id); 
+			        delete content["_id"]; 				//deleting _id present in content json, because of _id inderer is returning error of inappropriate data 
+			        content.id = id; 					// replacing _id with id in content json
 			        console.log("****",id);
-			        create(content, id);
+			        create(content, id); 				// caling create function for indexing
 			        
 			    }
 			}).catch((e) => {
@@ -70,8 +69,6 @@ function writeXML(rssData){
 	});
 		
 }
-
-
 
 function getRSS(callback) {
 
@@ -99,8 +96,6 @@ function getRSS(callback) {
 
 }
 
-
-  
 getRSS(writeXML);
 
 
@@ -109,6 +104,8 @@ getRSS(writeXML);
 
 /**
  * Create Indexing in ES
+ * prarams: content contains json of data for indexing
+ * id- id is the id form mongodb for that perticular element 
  */
 function create(content, id) {
         ESCLIENT.create({
@@ -124,6 +121,34 @@ function create(content, id) {
             else
             {
 	            console.log('EXCELLENT');
+	            var attchmentJson = {
+	            	title: content.title,
+	            	text: content.content,
+	            	color: "#36a64f",
+	            	title_link: content.link
+	            }
+	            var atachmentArray = [];
+	            atachmentArray.push(attchmentJson);
+
+
+			    REQUEST({
+					url: 'https://slack.com/api/chat.postMessage',
+					qs: {token: 'xoxp-13168916822-109560462723-125270384160-b00d8827cc938e6d59fbf9647184a5a0',
+						channel: 'C3Q3NMSA1',
+						username: 'Ians news',
+						attachments: JSON.stringify(atachmentArray),
+						pretty: 1
+					}
+				}, function (error, response, body) {
+					if (error) {
+						console.log('Error sending message: ', error);
+					} else {
+						console.log('========body.length===GetNews=======',body);
+					}
+				});
+
+	            // send mail on sucecess of indexing
+
                 // transporter.sendMail({
                 //     from: 'anahita.neogi@gmail.com', // sender address
                 //     to: 'tn@factordaily.com', // list of receivers

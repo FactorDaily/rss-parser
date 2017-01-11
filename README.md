@@ -138,3 +138,92 @@ rssParser.parse({
     //  ... process runtime error someway
 });
 ```
+----------
+#### wordpress Plugin for creating Draft->
+
+<?php
+
+/*
+  Plugin Name: News Feed
+  Description: Fetching json news feed daily with cron.
+  Author: Arun Kumar
+  Version: 1.0
+ */
+
+function feed_init() {
+    $url = 'http://192.241.141.123:5000/ians/india%20software%20ecommerce%20mobile%20google%20microsoft%20android%20ios%20science%20finance/himanshu';
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $con = curl_exec($ch);
+    curl_close($ch);
+    $feeds = json_decode($con);
+    var_dump($feeds);
+    
+    if (is_array($feeds)) {
+        $news_posts = array();
+        $args = array(
+            'post_type' => 'fd_news',
+            'post_status' => 'any',
+            'meta_query' => array(
+                'key' => 'feed_link_news_json'
+            )
+        );
+        $get_news = get_posts($args);
+        if ($get_news) {
+            foreach ($get_news as $news) {
+                $news_posts[] = get_post_meta($news->ID, 'feed_link_news_json', true);
+            }
+        }
+        $total = 0;
+        
+        foreach ($feeds as $feed) {      //as feed comes in nested array, used nested loops 
+            foreach ($feed as $fee) {
+               $post = array(
+                    'post_title' => $fee->title,
+                    'post_content' => $decodedContent,
+                    'post_status' => 'draft',
+                    'post_type' => 'fd_news',
+                    'post_excerpt' => $fee->description
+                );
+
+                $post_id = wp_insert_post($post); 
+                update_post_meta($post_id, 'feed_link_news_json', $fee->link); // to update post meta to create draft
+                $total++;
+
+            }
+        }
+
+        if ($total > 0) {
+            $group_emails = array('tn@factordaily.com', 'prakriti@factordaily.com', 'jayadevan@factordaily.com');
+            wp_mail($group_emails, 'News feed added', $total . ' new News posts added from feed.');
+        }
+    }
+}
+
+
+function my_cron_schedules($schedules){    //for scheduling 
+    if(!isset($schedules["1min"])){
+        $schedules["1min"] = array(
+            'interval' => 1*60,
+            'display' => __('Once every 1 minute'));
+    }
+    if(!isset($schedules["30min"])){
+        $schedules["30min"] = array(
+            'interval' => 30*60,
+            'display' => __('Once every 30 minutes'));
+    }
+    return $schedules;
+}
+add_filter('cron_schedules','my_cron_schedules');
+
+register_activation_hook(__FILE__, 'my_activation');
+
+function my_activation() {
+    if (!wp_next_scheduled('my_hourly_event')) {
+        wp_schedule_event(time(), '1min', 'my_hourly_event');
+    }
+}
+
+
+add_action('my_hourly_event', 'feed_init');
