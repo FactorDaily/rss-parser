@@ -1,7 +1,7 @@
 let c = {
 
 	//	Full MongoDB connection URL (you can specify user and password here)
-	mongoUrl: 'mongodb://localhost:27017/ians',
+	mongoUrl: 'mongodb://localhost:2900/ians',
 
 	//	Collection name
 	mongoCollection: 'contents',

@@ -14,7 +14,7 @@
 		}
 	],
 	"elasticSearch": {
-		"url": "http://localhost:9200/",
+		"url": "http://192.241.141.123:9200/",
 		"index":"ians",
         "type":"news"
 	},
