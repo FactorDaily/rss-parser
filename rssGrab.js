@@ -1,14 +1,13 @@
 const fs = require('fs');
 const uuid = require('node-uuid');
 const rssParser = require('./index.js');
-
+var CronJob = require('cron').CronJob;
 var ELASTICSEARCH 	= require('elasticsearch');
 var CONSTANT 		= require('./constant.json');
 var HTTP            = require('http');
 var REQUEST 		= require('request');
 
 var NODEMAILER      = require('nodemailer');
-
 
 /**
  * ESCLIENT is ES CLient object
@@ -96,8 +95,10 @@ function getRSS(callback) {
 
 }
 
-getRSS(writeXML);
 
+new CronJob('0 */58 * * * *', function() {
+	getRSS(writeXML);
+}, null, true, 'America/Los_Angeles');
 
 
 
